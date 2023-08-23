@@ -9,6 +9,16 @@ const typeDefs = gql`
         software: Software
         supplies: [Supply]
         givens: [Given]
+        peopleFiltered(
+            team: Int, 
+            sex: Sex, 
+            blood_type: BloodType, 
+            from: String
+        ): [People]
+        peoplePaginated(
+            page: Int!,
+            per_page: Int!
+        ): [People]
     }
 `
 

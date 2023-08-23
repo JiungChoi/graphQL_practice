@@ -17,7 +17,7 @@ const typeDefs = gql`
 `
 const resolvers = {
     Query: {
-        people: (parent, args) => dbWorks.getPeople(args),
+        people: (parent, args) => dbWorks.getPeople(args)
     }
 }
 module.exports = {
